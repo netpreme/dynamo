@@ -35,6 +35,8 @@ ckf-diagnostics = []
 kv-router-stress = ["dep:clap", "dep:indicatif", "bench"]
 mm-routing = ["dep:llm-multimodal", "dep:llm-tokenizer"]
 request-trace-bench = []
+# S3 destination for the request-trace sink, reusing the existing object_store client.
+request-trace-s3 = []
 
 [[bench]]
 name = "tokenizer_simple"
